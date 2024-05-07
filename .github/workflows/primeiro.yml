@@ -19,5 +19,5 @@ jobs:
             - run: |
                     echo 'build -------multiline-------'
                     date
-                    ls lrth --color
+                    ls -lrth --color
               shell: bash

@@ -1,0 +1,23 @@
+
+name: 'primeiro workflow' 
+#nome
+
+on: 'push'
+#quando acontecer uma ação no git (push/commit/pull request/etc) gera o dispara para o jobs
+
+jobs:
+    #trabalhos para serem executados
+    build:
+        runs-on: 'ubuntu-latest' #ideal para ambientes comtrolados
+        steps:
+            #execmplo de execuções
+            - run: echo 'build-------------'
+              shell: bash
+    build-multiline:
+        runs-on: 'ubuntu-latest'
+        steps:
+            - run: |
+                    echo 'build -------multiline-------'
+                    date
+                    ls -lrth --color
+              shell: bash

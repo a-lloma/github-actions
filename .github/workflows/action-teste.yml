@@ -7,7 +7,8 @@ jobs:
     action-na-pratica:
         runs-on: 'ubuntu-latest'
         steps:
-            - uses: a-lloma/github-actions@main
+            - uses: a-lloma/github-actions@create-actions
+            # - uses: a-lloma/github-actions@main
             # uses: origem/nomeDoRepositorio@branch
             # outro exemplo - uses: actions/hello-world-javascripr-action@main
             # dica, usar a release ou uma tag imutavel 

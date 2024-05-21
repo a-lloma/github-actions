@@ -15,7 +15,7 @@ jobs:
         steps:
             - run: |
                     echo 'shell powershell'
-                    Get-location
+                    Get-Location
               shell: powershell
     
     shell-python:

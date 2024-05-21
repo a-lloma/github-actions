@@ -7,7 +7,7 @@ jobs:
     action-na-pratica:
         runs-on: 'ubuntu-latest'
         steps:
-            - uses: a-lloma/github-actions/tree/feature/create-actions
+            - uses: a-lloma/github-actions@feature/create-actions
             # - uses: a-lloma/github-actions@main
             # uses: origem/nomeDoRepositorio@branch
             # outro exemplo - uses: actions/hello-world-javascripr-action@main

@@ -23,7 +23,7 @@ jobs:
         steps:
             - run: |
                     aplicationName="TesteAplicação"
-                    print(f"primeira", {aplicationName})
+                    print(f"primeira {aplicationName}")
                     workflow_name="txt-1p0-nomedealgumacoisa"
                     sigla=workflow_name.split("-")[1]
                     print(f"Sigla: {sigla}")

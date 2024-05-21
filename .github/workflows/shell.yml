@@ -1,0 +1,28 @@
+
+name: 'trabalhando com diferentes terminais' 
+
+on: 'push'
+
+jobs:
+    shell-bash:
+        runs-on: 'ubuntu-latest' 
+        steps:
+            - run: echo 'shell bash'
+              shell: bash
+
+    shell-powershell:
+        runs-on: 'ubuntu-latest'
+        steps:
+            - run: |
+                    echo 'shell powershell'
+                    Get-location
+              shell: powershell
+    
+    shell-python:
+        runs-on: 'ubuntu-latest'
+        steps:
+            - run: |
+                    aplicationName="TesteAplicação"
+                    print("primeira", {aplicationName})
+              shell: python
+

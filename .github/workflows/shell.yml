@@ -25,7 +25,7 @@ jobs:
                     aplicationName="TesteAplicação"
                     print("primeira", {aplicationName})
                     workflow_name="txt-1p0-nomedealgumacoisa"
-                    sigla=workflow_name.spli("-")[1]
+                    sigla=workflow_name.split("-")[1]
                     print("Sigla: {sigla}")
               shell: python
 

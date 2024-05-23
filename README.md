@@ -15,3 +15,9 @@ diferentes shells
 | windows | powershell |
 
 
+marketplace de actions
+utilizadas
+https://github.com/marketplace/actions/upload-a-build-artifact
+https://github.com/marketplace/actions/download-a-build-artifact 
+
+

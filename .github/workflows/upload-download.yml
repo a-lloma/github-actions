@@ -14,10 +14,10 @@ jobs:
                 ls -lrth
                 cat teste.txt
               shell: bash
-            - uses: actions/upload-artifact@v4          
-            with:
-              name: meu-artefato-gerado
-              path: ./teste.txt
+            - uses: actions/upload-artifact@v4 
+              with:
+                name: meu-artefato-gerado
+                path: ./teste.txt
     Download:
         needs:
             - Upload #precisa que o jo0b anteriorseja executado primeiro

@@ -1,0 +1,24 @@
+
+name: '| actions de upload e download' 
+
+on: 'push'
+
+jobs:
+    Upload:
+        runs-on: 'ubuntu-latest' 
+        steps:
+            - run: |
+                ls -lrth
+                touch teste.txt
+                echo "criando pipes" > teste.txt
+                ls -lrth
+                cat teste.txt
+              shell: bash
+    Download:
+        needs:
+            - Upload #precisa que o jo0b anteriorseja executado primeiro
+        runs-on: 'ubuntu-latest'
+        steps: #mostra que não existe herança entre jobs
+            - run: |
+                ls -lrth 
+              shell: bash

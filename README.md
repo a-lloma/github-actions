@@ -45,3 +45,5 @@ upload-download.yml // final: conexão entre jobs e compartilhamento de informa�
 
 #### events
 link referência: https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows 
+<br>
+exemplo de PR https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request

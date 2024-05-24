@@ -1,0 +1,13 @@
+name: '2 - activity type' 
+
+on: 
+    pull_request:
+        types: "closed"
+        branches: "develop"
+
+jobs:
+    build:
+        runs-on: "up-teste-linux-dev"
+        steps:
+            - run: echo '---- feature develop ╰(*°▽°*)╯'
+              shell: bash

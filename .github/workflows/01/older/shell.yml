@@ -1,0 +1,31 @@
+
+name: 'trabalhando com diferentes terminais' 
+
+on: 'push'
+
+jobs:
+    shell-bash:
+        runs-on: 'ubuntu-latest' 
+        steps:
+            - run: echo 'shell bash'
+              shell: bash
+
+    shell-powershell:
+        runs-on: 'windows-latest'
+        steps:
+            - run: |
+                    echo 'shell powershell'
+                    Get-Location
+              shell: powershell
+    
+    shell-python:
+        runs-on: 'ubuntu-latest'
+        steps:
+            - run: |
+                    aplicationName="TesteAplicação"
+                    print(f"primeira {aplicationName}")
+                    workflow_name="txt-1p0-nomedealgumacoisa"
+                    sigla=workflow_name.split("-")[1]
+                    print(f"Sigla: {sigla}")
+              shell: python
+

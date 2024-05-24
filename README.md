@@ -40,3 +40,8 @@ upload-download.yml // final: conexão entre jobs e compartilhamento de informa�
 
 
 
+<br>
+<br>
+
+#### events
+link referência: https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows 

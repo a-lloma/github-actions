@@ -1,0 +1,13 @@
+name: '2 - activity type' 
+
+on: 
+    pull_request:
+        types: "closed"
+        branches: "develop"
+
+jobs:
+    build:
+        runs-on: "ubuntu-latest"
+        steps:
+            - run: echo '---- feature develop ╰(*°▽°*)╯'
+              shell: bash

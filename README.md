@@ -40,3 +40,38 @@ upload-download.yml // final: conexão entre jobs e compartilhamento de informa�
 
 
 
+<br>
+<br>
+
+#### events
+link referência: https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows 
+<br>
+exemplo de PR https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request
+
+<br>
+ON - schedule
+evento agendado permite acionar um workflow em um horário agendado
+
+
+*****
+12345
+1-minutos (0-59)
+2- horas (0-23)
+3 dias do mes (1-31)
+mês (1-12 ou JAN-DEC)
+dias da semana (0-6 ou SUN-SAT)
+
+<pre><code class="hljs language-text">┌───────────── minute (0 - 59)
+│ ┌───────────── hour (0 - 23)
+│ │ ┌───────────── day of the month (1 - 31)
+│ │ │ ┌───────────── month (1 - 12 or JAN-DEC)
+│ │ │ │ ┌───────────── day of the week (0 - 6 or SUN-SAT)
+│ │ │ │ │
+│ │ │ │ │
+│ │ │ │ │
+* * * * *
+</code></pre>
+
+https://crontab.guru/every-5-minutes
+<br>
+*/5 * * * *

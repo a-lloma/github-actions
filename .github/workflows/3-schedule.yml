@@ -1,13 +1,13 @@
-name: "3-schedule"
+name: '3-schedule'
 
 on:
   schedule:
-  - cron: '*/5 * * * *'
+  - cron: '0 22 * * 1-5'
  
 jobs:
     test_schedule:
       runs-on: 'ubuntu-latest'
       steps:
         - name: 'teste schedule'
-          run: echo "teste schedule at date `date`"
+          run: echo ' teste schedule at date `date` '
           shell: bash

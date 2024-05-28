@@ -2,7 +2,8 @@ name: '3-schedule'
 
 on:
   schedule:
-  - cron: '0 22 * * 1-5'
+
+  - cron: '*/2 * * * *'
  
 jobs:
     test_schedule:

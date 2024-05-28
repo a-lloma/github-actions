@@ -7,7 +7,7 @@ on:
 
 jobs:
     build:
-        runs-on: "up-teste-linux-dev"
+        runs-on: "ubuntu-latest"
         steps:
             - run: echo '---- feature develop ╰(*°▽°*)╯'
               shell: bash

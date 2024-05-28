@@ -7,7 +7,7 @@ on:
 
 jobs:
     build:
-        runs-on: "primeiro-teste-linux-dev"
+        runs-on: "ubuntu-latest"
         steps:
             - run: echo '---- ❤️primeiro teste'
               shell: bash
